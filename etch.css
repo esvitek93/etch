@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    margin: auto;
+}
+
+#container {
+    border: 1px solid black;
+}
+
+.square {
+    border: 1px solid black;
+    flex: auto;
+}
+
+.hover {
+    background-color: black;
+}
+
+.btn {
+    margin: 50px;
+}
