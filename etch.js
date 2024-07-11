@@ -32,13 +32,13 @@ function createGrid(size) {
         square.style.height = h.toString() + 'px'
         square.style.width = h.toString() + 'px'
         square.addEventListener("mouseenter", () => {
-            if (!square.classList.contains("filled")) {
+            //if (!square.classList.contains("filled")) {
                 let r = Math.floor(Math.random() * 256).toString()
                 let g = Math.floor(Math.random() * 256).toString()
                 let b = Math.floor(Math.random() * 256).toString()
                 square.style.backgroundColor = `rgb(${r},${g},${b})`
                 square.classList.add("filled")
-            }
+            //}
             let style = window.getComputedStyle(square)
             let op = Number(style.getPropertyValue("opacity"))
             if (op < 1) {
